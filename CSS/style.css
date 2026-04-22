@@ -164,9 +164,15 @@ article section {
   margin: 50px;
 }
 
-footer {
+  footer {
   background-color: #523f2e;
   color: #ffffff;
-  text-align: center;
-  padding: 14px 10px 20px;
+  width: 1240px;
+  margin: 0 auto;      
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 20px 0;      
 }
+  
+
