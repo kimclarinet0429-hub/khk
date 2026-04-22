@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+  background-image: url(../assets/bg.png);
+  font-size: 16px;
+  color: #333333;
+}
+
+header {
+  width: 1240px;
+  margin: 0 auto 44px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0px 16px;
+}
+/* header 안에 있는 nav 안에 있는 ul */
+header nav ul {
+  display: flex;
+  justify-content: center;
+  /* justify는 중앙정렬과 같은뜻임. */
+  border-top: 2px solid #7c5d48;
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255, 255, 255, 0.42);
+  /* rgba는 투명도를 조절할 수 있다. */
+  padding: 12px 0px 10px;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0px 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+  text-decoration: none;
+}
+/* 7교시 여기까지 */
+/* a태그에 마우스를 올리면! hover */
+header nav ul li a:hover {
+  text-decoration: underline double #eb7a92 2px;
+  /* 밑줄두줄 생기고 핑크색으로 2px굵기로 */
+}
+div {
+  width: 1240px;
+  margin: 0 auto 50px;
+  display: flex;
+  /* 자식들이 나란히 */
+  /* div안에 class같은거 추가해서 구별하겠다.<div class=어쩌구 이런식으로 여러개의 div연결
+   */
+}
+main {
+  background-color: #ffffff;
+}
+
+aside {
+  background-color: blueviolet;
+}
