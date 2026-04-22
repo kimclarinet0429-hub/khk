@@ -46,14 +46,127 @@ div {
   width: 1240px;
   margin: 0 auto 50px;
   display: flex;
+  justify-content: space-between;
+  /*양쪽정렬 */
   /* 자식들이 나란히 */
   /* div안에 class같은거 추가해서 구별하겠다.<div class=어쩌구 이런식으로 여러개의 div연결
    */
 }
 main {
+  flex-basis: 920px;
   background-color: #ffffff;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  /* inset은 안쪽으로 그림자 표현 */
+  /* 그럼자효과까지 줄 수 있음.8px은 얼마나 멀리 가는지.)*/
 }
 
 aside {
-  background-color: blueviolet;
+  flex-basis: 284px;
+}
+/* 화면공간이 부족하거나 남는 경우 설정된 920픽셀을 기준으로 늘어나거나 줄어들 준비
+유연한 시장상태(유동적) 너비는 고정적 * 부모 박스 설정에 따라 변할수있음. */
+
+aside nav {
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.16);
+  padding: 62px 52px 32px 32px;
+  padding-bottom: 24px;
+}
+  
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+
+aside nav ul {
+  font-size: 14px;
+}
+
+.categoryNav ul li {
+  list-style-type: square;
+  color: #7c5d48;
+  margin: 0 0 16px 20px;
+}
+.categoryNav ul li a {
+  color:  #333333;
+}
+
+.recentNav ul li {
+  border-bottom: 1px solid #7c5d48;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.recentNav ul {
+  height: 240px;
+  overflow: hidden scroll;
+}
+/* 높이 높이니까 스크롤바 생김 1.수평스크롤바(hidden이여서 없음), 2.수직스크롤바*/
+/*높이를 쓰지않으면 스크롤바 등장 안하고 화살표만 생겨서 함께 사용해야함. */
+article h2 {
+  font-size: 40px;
+  font-weight: 500;
+  /* 인지가 되는 폰트인지 확인 인지되지 않는 폰트는 보통으로 나옴. */
+  margin-bottom: 8px;
+}
+
+time {
+  background-color: #91c777;
+  border-radius: 0px 22px 22px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 11px 23px 10px 18px;
+  display: inline-block;
+  /* display inline block을 설정하면 위 아래 약간의 padding이 자동으로 설정된다. 
+  옆으로 글씨를 더 적어도 늘어난다.*/
+}
+.postdate {
+  margin-bottom: 26px;
+}
+.eyecatch {
+  margin-bottom: 26px;
+}
+/* article h3 {
+  /* font-size: bold;
+  font-weight: 600;
+  color: #7c5d48;
+} */ 
+
+article h3 {
+  border-bottom: 2px solid #6ab547;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  background-image: url(../assets/h2_icon.png);
+  background-repeat: no-repeat;
+  /* 반복하지않을때 노 리핏 */
+  background-position: left bottom;
+  padding: 20px 10px 10px 48px;
+  /* 백그라운드 이미지 넣을때 백그라운드보다 이미지가 작으면 알아서 잔뜩 넣어줌. */
+}
+article p {
+  line-height: 1.6;
+  /* 라인의 높이 넓히 1.6으로하는 것이랑 160%와 같음*/
+  margin-bottom: 24px;
+}
+
+article section {
+  margin: 50px;
+}
+
+footer {
+  background-color: #523f2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 10px 20px;
 }
