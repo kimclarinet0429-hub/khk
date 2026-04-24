@@ -1,0 +1,22 @@
+.fullnavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50
+}
+
+.nav-item {
+  color: white;
+  font-weight: bold;
+  margin: 40px 100px;
+  text-decoration: none;
+  cursor: pointer;
+}
